@@ -1,0 +1,27 @@
+menu:
+  home: 首页
+  archives: 归档
+  categories: 分类
+  tags: 标签
+  about: 关于
+  search: 搜索
+  rss: RSS
+  commonweal: 公益404
+  
+title:
+  archive: 归档
+  category: 分类
+  tag: 标签
+
+sidebar:
+  post: 日志
+  categories: 分类
+  tags: 标签
+tags: 
+  title: "目前共计 %d 个标签"
+categories:
+  title: "目前共计 %d 个分类"
+footer:
+  powered: "由 %s 强力驱动"
+  theme: 主题
+read_more: 阅读全文

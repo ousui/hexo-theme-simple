@@ -1,12 +1,12 @@
 <section class="archives-wrap">
   <% if (page.category) { %>
     <div class="ct-title">
-      <h2><%= page.category %> <small>分类</small></h2>
+      <h2><%= page.category %> <small><%= __('menu.categories') %></small></h2>
     </div>
   <% } %>
   <% if (page.tag) { %>
     <div class="ct-title">
-      <h2><%= page.tag %>  <small>标签</small></h2>
+      <h2><%= page.tag %>  <small><%= __('menu.tags') %></small></h2>
     </div>
   <% } %>
   <% page.posts.each(function(post, i){ %>
@@ -31,9 +31,9 @@
         <% } else { %>
           <%- post.content %>
         <% } %>
-      </div>
-      <div class='read-more'>
-        <a href="<%- url_for(post.path) %>"><span class='i-next'>阅读全文</span></a>
+        <div class='read-more'>
+          <a href="<%- url_for(post.path) %>"><span class='i-next'><%= __('read_more') %></span></a>
+        </div>
       </div>
     </div>
   <% }) %>
