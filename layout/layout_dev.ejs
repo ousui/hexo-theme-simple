@@ -12,7 +12,7 @@
     <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
     <div class="wrap">
       <%- partial('_partial/side') %>
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+      <%- partial('_partial/header') %>
       <section id="main" class="content">
         <%- body %>
       </section>
@@ -20,10 +20,7 @@
     </div>
   </div>
   <%- js('simple_script') %>
-  <% if (theme.duoshuo_shortname) { %>
-    <%- partial('_script/comments/duoshuo.ejs') %>
-  <% } else if (theme.disqus_shortname) { %>
-    <%- partial('_script/comments/disqus.ejs') %>  
-  <% } %>
+  <%- partial('_script/comments.ejs') %>
+  <%- partial('_script/analytics.ejs') %>
 </body>
 </html>
